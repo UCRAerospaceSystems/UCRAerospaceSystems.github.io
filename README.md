@@ -9,9 +9,14 @@ Helpful Links when working with Hugo:
 4. https://www.youtube.com/watch?v=qtIqKaDlqXo&list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3
 
 ### Way to separate dev dirs and deployment dirs:
-House the development and deploy directories under one project directory
+House the development and deploy directories under one project directory so that the tree looks like:
+```
+docs_project
+ -- development
+ -- public
+```
 
-Run the command from the project directory:
+To compile, run the command from the project directory:
 ```
 cd development ; hugo -D --destination ../public
 ```
