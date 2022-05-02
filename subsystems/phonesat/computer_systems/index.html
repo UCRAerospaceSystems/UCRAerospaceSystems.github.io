@@ -8,18 +8,18 @@
     <meta name="description" content="">
     <title>Computer Systems :: RSat Documentation</title>
     <link rel="alternate" type="application/rss&#43;xml" href="../../../subsystems/phonesat/computer_systems/index.xml" title="RSat Documentation" />
-    <link rel="alternate" type="text/html" href="../../../_print/subsystems/phonesat/computer_systems/" title="RSat Documentation" />
-    <link rel="icon" href="../../../images/favicon.ico?1651458435" type="image/x-icon">
-    <link href="../../../css/nucleus.css?1651458435" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1651458435" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1651458435" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1651458435" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1651458435" rel="stylesheet">
-    <link href="../../../css/theme.css?1651458435" rel="stylesheet">
-    <link href="../../../css/theme-blue.css?1651458435" rel="stylesheet" id="variant-style">
-    <link href="../../../css/variant.css?1651458435" rel="stylesheet">
-    <link href="../../../css/print.css?1651458435" rel="stylesheet" media="print">
-    <script src="../../../js/variant.js?1651458435"></script>
+    <link rel="alternate" type="text/html" href="../../../subsystems/phonesat/computer_systems/_print/" title="RSat Documentation" />
+    <link rel="icon" href="../../../images/favicon.ico?1651459542" type="image/x-icon">
+    <link href="../../../css/nucleus.css?1651459542" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1651459542" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1651459542" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1651459542" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1651459542" rel="stylesheet">
+    <link href="../../../css/theme.css?1651459542" rel="stylesheet">
+    <link href="../../../css/theme-blue.css?1651459542" rel="stylesheet" id="variant-style">
+    <link href="../../../css/variant.css?1651459542" rel="stylesheet">
+    <link href="../../../css/print.css?1651459542" rel="stylesheet" media="print">
+    <script src="../../../js/variant.js?1651459542"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -35,7 +35,7 @@
       var baseUriFull='/';
       variants.init( [ 'blue', 'relearn-light', 'relearn-dark' ] );
     </script>
-    <script src="../../../js/jquery.min.js?1651458435"></script>
+    <script src="../../../js/jquery.min.js?1651459542"></script>
   </head>
   <body class="mobile-support" data-url="../../../subsystems/phonesat/computer_systems/">
     <div id="body" class="default-animation">
@@ -44,13 +44,13 @@
       <nav id="topbar" class="highlightable">
         <div>
           <div class="navigation">
-             <span class="nav nav-next"><i class="fa fa-chevron-right fa-fw"></i></span>
+             <a class="nav nav-next" href="../../../subsystems/phonesat/computer_systems/android-phone/" title="Android Phone"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
              <a class="nav nav-prev" href="../../../subsystems/phonesat/" title="PhoneSat"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="top-print-link">
-            <a class="print-link" title='Print whole chapter' href="../../../_print/subsystems/phonesat/computer_systems/">
+            <a class="print-link" title='Print whole chapter' href="../../../subsystems/phonesat/computer_systems/_print/">
               <i class="fas fa-print fa-fw"></i>
             </a>
           </div>
@@ -71,12 +71,7 @@
             <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#the-computer-systems">The Computer Systems</a>
-      <ul>
-        <li><a href="#the-obc">The OBC</a></li>
-        <li><a href="#the-android-phone">The Android Phone</a></li>
-      </ul>
-    </li>
+    <li><a href="#the-computer-systems">The Computer Systems</a></li>
   </ul>
 </nav>
             </div>
@@ -93,45 +88,6 @@
 <h2 id="the-computer-systems">The Computer Systems</h2>
 <p>The computer systems of the satellite consist of two parts.
 The On Board Computer (OBC) which interfaces between the Android Phone and the rest of the Satellite, and the Android Phone which will serve as the Inertial Measurement Unit (IMU).</p>
-<hr>
-<h3 id="the-obc">The OBC</h3>
-<p>The OBC will handle the processing of radio signals to and from the home base as well as send data across the Radio Waves.</p>
-<p>The OBC consists of:</p>
-<ol>
-<li>USB Connection to the Phone</li>
-<li>Radio Signal Module</li>
-<li>Packetizer</li>
-<li>Heartbeat functionality</li>
-</ol>
-<p>The USB Connection will allow the OBC to interface with the Android Phone, getting important IMU data to maneuver the satellite and any images the phone takes.
-The Radio Signal Module will interface with the two antennas on R&rsquo;Satellite and send data on regular pulses (as well as receive data).
-The packetizer module will transform any received data into bytes that can be sent to the Phone and processed there.
-The packetizer will also take data from the Phone and transform them into a packet in order to send more than engineering data across the waves.
-The Heartbeat function is there to prevent any errors that could shut the Phone or Application on the Phone off.
-Every couple of seconds, the function will send a pulse through the USB to ensure the application is properly running.
-The phone needs to respond with a pulse back, otherwise after a set amount of time the Phone will be restarted by the OBC (restart not yet designed though).</p>
-<hr>
-<h3 id="the-android-phone">The Android Phone</h3>
-<p>The Android Phone will serve as the IMU of the entire Satellite and the only method to take pictures while in space.</p>
-<p>The Android Phone Application will consist of:</p>
-<ol>
-<li>Sensor Module</li>
-<li>Vector class</li>
-<li>Camera Module</li>
-<li>Image Processor</li>
-<li>Image Cropping</li>
-<li>Color Formatting</li>
-<li>Image Analyzer</li>
-<li>Image Compression</li>
-<li>USB Connection to the OBC</li>
-<li>Auto-start/Auto-reboot function</li>
-</ol>
-<p>The Sensor Module is the section of the Application which will snoop through all the sensors of the Phone and return Linear/Rotational Velocity, Magnetometer data, and GPS information.
-The Sensor Module must, of course, include a Vector class to manage the information measured by the sensors on the phone.
-The Camera Module consists of itself, to take the picture, and then an Image Processor to format the image taken and ensure that the image/video is not too large.
-Then the Image Analyzer will compress this image/video and send it through the USB connection to be packetized and sent back to Earth.
-The USB Connection will simply connect the Android Phone to the OBC.
-The Auto-start/Auto-reboot function will ensure the program automatically starts when the phone is restarted whether by itself or by the OBC.</p>
 
             <footer class="footline">
             </footer>
@@ -205,9 +161,9 @@ The Auto-start/Auto-reboot function will ensure the program automatically starts
           <input data-search-input id="search-by" type="search" placeholder="Search...">
           <span data-search-clear=""><i class="fas fa-times"></i></span>
         </div>
-        <script src="../../../js/lunr.min.js?1651458435"></script>
-        <script src="../../../js/auto-complete.js?1651458435"></script>
-        <script src="../../../js/search.js?1651458435"></script>
+        <script src="../../../js/lunr.min.js?1651459542"></script>
+        <script src="../../../js/auto-complete.js?1651459542"></script>
+        <script src="../../../js/search.js?1651459542"></script>
       </div>
       <div id="homelinks" class="default-animation">
         <ul>
@@ -221,7 +177,9 @@ The Auto-start/Auto-reboot function will ensure the program automatically starts
           <li data-nav-id="/basics/" title="Basics" class="dd-item"><a href="../../../basics/">Basics</a></li>
           <li data-nav-id="/subsystems/" title="Subsystems" class="dd-item parent"><input type="checkbox" id="section-a3a51fa5be229ee69d1bcc3e21b7d18b" class="toggle" checked/><label for="section-a3a51fa5be229ee69d1bcc3e21b7d18b" ></label><a href="../../../subsystems/">Subsystems</a><ul>
           <li data-nav-id="/subsystems/phonesat/" title="PhoneSat" class="dd-item parent alwaysopen"><input type="checkbox" id="section-4555a99d36574be9a1ff503c0223ce26" class="toggle" checked/><label for="section-4555a99d36574be9a1ff503c0223ce26" ></label><a href="../../../subsystems/phonesat/">PhoneSat</a><ul>
-          <li data-nav-id="/subsystems/phonesat/computer_systems/" title="Computer Systems" class="dd-item active"><a href="../../../subsystems/phonesat/computer_systems/">Computer Systems</a></li></ul></li></ul></li>
+          <li data-nav-id="/subsystems/phonesat/computer_systems/" title="Computer Systems" class="dd-item active parent alwaysopen"><input type="checkbox" id="section-6795a3c1d8bd481182c92a752f6ee003" class="toggle" checked/><label for="section-6795a3c1d8bd481182c92a752f6ee003" ></label><a href="../../../subsystems/phonesat/computer_systems/">Computer Systems</a><ul>
+          <li data-nav-id="/subsystems/phonesat/computer_systems/android-phone/" title="Android Phone" class="dd-item"><a href="../../../subsystems/phonesat/computer_systems/android-phone/">Android Phone</a></li>
+          <li data-nav-id="/subsystems/phonesat/computer_systems/obc/" title="The OBC" class="dd-item"><a href="../../../subsystems/phonesat/computer_systems/obc/">The OBC</a></li></ul></li></ul></li></ul></li>
         </ul>
         <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter"></div>
         <hr class="default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter"/>
@@ -262,9 +220,9 @@ The Auto-start/Auto-reboot function will ensure the program automatically starts
         </div>
       </div>
     </aside>
-    <script src="../../../js/clipboard.min.js?1651458435"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1651458435"></script>
-    <script src="../../../js/featherlight.min.js?1651458435"></script>
-    <script src="../../../js/theme.js?1651458435"></script>
+    <script src="../../../js/clipboard.min.js?1651459542"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1651459542"></script>
+    <script src="../../../js/featherlight.min.js?1651459542"></script>
+    <script src="../../../js/theme.js?1651459542"></script>
   </body>
 </html>

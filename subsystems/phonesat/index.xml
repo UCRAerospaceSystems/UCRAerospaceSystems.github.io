@@ -10,10 +10,9 @@
     <item>
       <title>Computer Systems</title>
       <link>/subsystems/phonesat/computer_systems/</link>
-      <pubDate>Sun, 01 May 2022 18:23:22 -0700</pubDate>
+      <pubDate>Sun, 01 May 2022 18:23:10 -0700</pubDate>
       <guid>/subsystems/phonesat/computer_systems/</guid>
-      <description>The Computer Systems The computer systems of the satellite consist of two parts. The On Board Computer (OBC) which interfaces between the Android Phone and the rest of the Satellite, and the Android Phone which will serve as the Inertial Measurement Unit (IMU).
- The OBC The OBC will handle the processing of radio signals to and from the home base as well as send data across the Radio Waves.</description>
+      <description>The Computer Systems The computer systems of the satellite consist of two parts. The On Board Computer (OBC) which interfaces between the Android Phone and the rest of the Satellite, and the Android Phone which will serve as the Inertial Measurement Unit (IMU).</description>
     </item>
   </channel>
 </rss>
