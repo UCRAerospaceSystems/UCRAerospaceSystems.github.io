@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PhoneSat on RSat Documentation</title>
+    <link>/subsystems/phonesat/</link>
+    <description>Recent content in PhoneSat on RSat Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 May 2022 18:23:10 -0700</lastBuildDate><atom:link href="/subsystems/phonesat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Computer Systems</title>
+      <link>/subsystems/phonesat/computer_systems/</link>
+      <pubDate>Sun, 01 May 2022 18:23:22 -0700</pubDate>
+      <guid>/subsystems/phonesat/computer_systems/</guid>
+      <description>The Computer Systems The computer systems of the satellite consist of two parts. The On Board Computer (OBC) which interfaces between the Android Phone and the rest of the Satellite, and the Android Phone which will serve as the Inertial Measurement Unit (IMU).
+ The OBC The OBC will handle the processing of radio signals to and from the home base as well as send data across the Radio Waves.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Subsystems on RSat Documentation</title>
+    <link>/subsystems/</link>
+    <description>Recent content in Subsystems on RSat Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 May 2022 18:20:58 -0700</lastBuildDate><atom:link href="/subsystems/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PhoneSat</title>
+      <link>/subsystems/phonesat/</link>
+      <pubDate>Sun, 01 May 2022 18:23:10 -0700</pubDate>
+      <guid>/subsystems/phonesat/</guid>
+      <description>Welcome to PhoneSat </description>
+    </item>
+  </channel>
+</rss>

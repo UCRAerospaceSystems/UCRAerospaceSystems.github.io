@@ -1,34 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Modern Documentation Theme on </title>
-    <link>https://ucraerospacesystems.github.io/</link>
-    <description>Recent content in Modern Documentation Theme on </description>
+    <title>RSat Documentation</title>
+    <link>/</link>
+    <description>Recent content on RSat Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
-    <copyright>Copyright (c) 2020-2021 Henk Verlinde</copyright>
-    <lastBuildDate>Tue, 06 Oct 2020 08:47:36 +0000</lastBuildDate>
-    
-        <atom:link href="https://ucraerospacesystems.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 May 2022 17:57:15 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Blog</title>
-      <link>https://ucraerospacesystems.github.io/blog/</link>
-      <pubDate>Tue, 06 Oct 2020 08:49:55 +0000</pubDate>
-      
-      <guid>https://ucraerospacesystems.github.io/blog/</guid>
-      <description></description>
+      <title>Basics</title>
+      <link>/basics/</link>
+      <pubDate>Sun, 01 May 2022 18:04:12 -0700</pubDate>
+      <guid>/basics/</guid>
+      <description>Welcome to CubeSat Basics! What is a CubeSat?</description>
     </item>
-    
     <item>
-      <title>Docs</title>
-      <link>https://ucraerospacesystems.github.io/docs/</link>
-      <pubDate>Tue, 06 Oct 2020 08:48:23 +0000</pubDate>
-      
-      <guid>https://ucraerospacesystems.github.io/docs/</guid>
-      <description></description>
+      <title>Subsystems</title>
+      <link>/subsystems/</link>
+      <pubDate>Sun, 01 May 2022 18:20:58 -0700</pubDate>
+      <guid>/subsystems/</guid>
+      <description>Welcome to Subsystems! </description>
     </item>
-    
   </channel>
 </rss>
